@@ -1,0 +1,87 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Follwing Bootstrap Crash Course</title>
+
+<style>
+        [class*="col"]
+        {
+            padding: 1rem;
+            background-color: #33b5e5;
+            border: 2px solid #fff;
+            color: #fff;
+            text-align: center;
+        }
+        /* [class*="con"]
+        {
+            padding: 1rem;
+            background-color: #9e33e5;
+            border: 2px solid #fff;
+            color: #fff;
+            text-align: center;
+        } */
+</style>
+
+    <link rel="stylesheet" href="css/bootstrap.css"/>
+</head>
+<body>
+
+
+
+
+    
+
+
+    <!-- container: center. container-fluid: takes up full width-->
+    <!-- container-<breakpoint: https://getbootstrap.com/docs/5.0/layout/breakpoints/ >:  -->
+    <div class="container-md">
+        <div class="row">
+            <div class="col-sm">1</div>
+            <div class="col-sm">2</div>
+            <div class="col-sm">3</div>
+        </div>
+        <div class="row">
+            <div class="col-sm">1</div>
+            <div class="col-sm">2</div>    
+        </div>        
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">Main Content</div>
+            <div class="col-md-4">Sidebar</div>
+        </div>
+    </div>
+
+    <h2>Gutters</h2>
+
+    <div class="container px-4">
+        <!-- spans 0 to 5, gx changes width. lower = more whitespace -->
+        <div class="row gx-5">
+            <div class="col">
+                <div class="p-3 border">Custome column padding</div>
+            </div>
+            <div class="col">
+                <div class="p-3 border">Custome column padding</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row gy-3">
+            <div class="col-6">1</div>
+            <div class="col-6">2</div>
+            <div class="col-6">3</div>
+            <div class="col-6">4</div>
+        </div>
+    </div>
+
+
+
+    <script src="https://unpkg.com/browse/@popperjs/core@2.9.2/" ></script>
+    <script src="js/bootstrap.js"></script>
+</body>
+</html>
